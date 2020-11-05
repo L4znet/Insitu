@@ -1,0 +1,12 @@
+header {
+    height: 100px;
+    @import "../logo.scss";
+    @import "nav.scss";
+    #check {
+        display: none;
+    }
+    #check:checked ~ *.menu {
+        transform: translateX(0);
+    }
+    @import "menu.scss";
+}

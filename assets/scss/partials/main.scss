@@ -1,0 +1,46 @@
+main {
+    display: flex;
+    flex-grow: 1;
+    div {
+        color: $white;
+        font-size: 40px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 40px;
+        height: 200px;
+        span {
+            font-family: "Open sans", sans-serif;
+            font-weight: 400;
+            strong {
+                font-family: "CoconOT-Bold";
+                text-transform: uppercase;
+            }
+        }
+
+        .list_deroulante {
+            width: 101%;
+            overflow: hidden;
+            display: flex;
+            height: 70px;
+            flex-direction: row;
+            margin: 0;
+            span {
+                margin: 15px 10px 0 0;
+            }
+            ul {
+                margin: 0;
+                overflow: hidden;
+                width: 100%;
+                li {
+                    color: $white;
+                    margin: 10px 0 0 0;
+                    animation: scrollup 5s linear infinite;
+                    display: flex;
+                    align-items: center;
+                    height: 70px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

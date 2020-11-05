@@ -1,0 +1,16 @@
+main {
+    display: flex;
+    align-items: center;
+    div {
+        span:nth-child(2n) {
+            position: relative;
+            &:before {
+                content: "";
+                position: absolute;
+                width: 30px;
+                height: 5px;
+                background-color: $white;
+            }
+        }
+    }
+}

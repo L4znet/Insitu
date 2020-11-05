@@ -1,0 +1,23 @@
+header {
+    height: 120px;
+
+    @import "nav.scss";
+
+    #check {
+        display: none;
+    }
+    #check:checked ~ *.menu {
+        transform: translateX(0);
+    }
+
+    @import "menu.scss";
+
+    .logo {
+        width: 120px;
+        margin: 0 20px;
+        svg {
+            fill: $black;
+            width: 100%;
+        }
+    }
+}

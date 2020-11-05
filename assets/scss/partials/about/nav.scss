@@ -1,0 +1,33 @@
+nav {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: $white;
+    ul {
+        li {
+            a {
+                border-radius: 50%;
+                border: 6px solid $black;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                svg {
+                    width: 70px;
+                    height: 70px;
+                }
+            }
+        }
+    }
+    label {
+        .burger {
+            i {
+                font-size: 49px;
+                color: $white;
+            }
+        }
+    }
+}

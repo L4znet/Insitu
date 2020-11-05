@@ -1,0 +1,27 @@
+nav {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    ul {
+        display: flex;
+        li {
+            a {
+                margin: 0 10px;
+                svg {
+                    fill: $black;
+                    stroke: $black;
+                }
+            }
+        }
+    }
+    label {
+        .burger {
+            i {
+                font-size: 49px;
+                color: $white;
+            }
+        }
+    }
+}

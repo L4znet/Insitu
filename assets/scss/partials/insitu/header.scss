@@ -1,0 +1,10 @@
+header {
+    @import "../logo.scss";
+    nav {
+        a {
+            i {
+                color: $red;
+            }
+        }
+    }
+}
