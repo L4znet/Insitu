@@ -8,13 +8,22 @@ header {
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        ul {
+        .main_nav {
             display: flex;
             li {
+                margin: 0 3px;
                 a {
-                    img {
-                        width: 50px;
-                        margin-right: 10px;
+                    border-radius: 50%;
+                    border: 6px solid $white;
+                    width: 30px;
+                    height: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    svg {
+                        width: 70px;
+                        height: 70px;
+                        fill: $white;
                     }
                 }
             }
