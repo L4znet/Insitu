@@ -55,7 +55,6 @@ footer {
 
 .footer__home {
     ul {
-        color: $black;
         transition: all 0.3s;
         a {
             color: $white;
@@ -90,7 +89,7 @@ footer {
 
 .footer__about {
     ul {
-        color: $black;
+        transition: all 0.3s;
         a {
             color: $black;
         }
@@ -98,6 +97,25 @@ footer {
             border: 7px solid $black;
             &:after {
                 background-color: $black;
+            }
+            svg {
+                fill: #000;
+            }
+        }
+        &:hover a {
+            color: $red;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        &:hover {
+            li:last-child {
+                border: 7px solid $red;
+                &:after {
+                    background-color: $red;
+                }
+                svg {
+                    fill: $red;
+                }
             }
         }
     }
