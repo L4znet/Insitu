@@ -4,11 +4,25 @@ nav {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    label {
-        .burger {
-            i {
-                font-size: 49px;
+    color: $white;
+    .main_nav {
+        color: $white;
+        li {
+            color: $white;
+            margin-left: 10px;
+            a {
+                border-radius: 50%;
+                border: 6px solid $white;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 color: $white;
+                transition: border 0.3s;
+                &:hover {
+                    cursor: pointer;
+                }
             }
         }
     }
