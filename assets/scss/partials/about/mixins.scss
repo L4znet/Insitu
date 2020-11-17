@@ -1,0 +1,10 @@
+// On défini la couleur
+// qui sera utilisé par tous les éléments de toutes les mixins
+// On utilise une variable déjà défini pour simplifier la modification
+// à l'avenir
+
+$main_color: $white;
+
+@mixin nav_color {
+    fill: $main_color;
+}

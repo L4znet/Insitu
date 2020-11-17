@@ -9,7 +9,6 @@ footer {
         align-items: center;
         height: 100%;
         a {
-            color: $white;
             display: flex;
             text-decoration: none;
             align-items: center;
@@ -25,11 +24,6 @@ footer {
                     justify-content: flex-end;
                     align-items: center;
                     height: 90px;
-                    &:before {
-                        position: absolute;
-                        content: "";
-                        animation: insitu_text 5s linear infinite;
-                    }
                 }
                 strong {
                     position: absolute;
@@ -39,7 +33,6 @@ footer {
             }
             li:last-child {
                 position: relative;
-                border: 7px solid $white;
                 border-radius: 50%;
                 width: 30px;
                 height: 30px;
@@ -52,10 +45,59 @@ footer {
                     content: "";
                     width: 40px;
                     height: 5px;
-                    background-color: $white;
                     top: 40%;
                     right: -43px;
                 }
+            }
+        }
+    }
+}
+
+.footer__home {
+    ul {
+        color: $black;
+        transition: all 0.3s;
+        a {
+            color: $white;
+        }
+        li:last-child {
+            border: 7px solid $white;
+            &:after {
+                background-color: $white;
+            }
+            svg {
+                fill: #fff;
+            }
+        }
+        &:hover a {
+            color: $black;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        &:hover {
+            li:last-child {
+                border: 7px solid $black;
+                &:after {
+                    background-color: $black;
+                }
+                svg {
+                    fill: $black;
+                }
+            }
+        }
+    }
+}
+
+.footer__about {
+    ul {
+        color: $black;
+        a {
+            color: $black;
+        }
+        li:last-child {
+            border: 7px solid $black;
+            &:after {
+                background-color: $black;
             }
         }
     }
