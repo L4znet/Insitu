@@ -1,32 +1,37 @@
 .method_1_bg {
     background: linear-gradient(90deg, $red, $pink);
-    background-size: 100% 60%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .method_2_bg {
-    background: url("../img/IMMERSION.jpg");
+    background: url("../img/IMMERSION.png");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
+    background-color: $black;
 }
 
 .method_3_bg {
-    background: url("../img/CAP_A_ATTEINDRE.jpg");
+    background: url("../img/CAP_A_ATTEINDRE.png");
     background-size: 100%;
     background-repeat: no-repeat;
     height: 100%;
+    background-color: $black;
 }
 
 .method_4_bg {
-    background: url("../img/TETE A TETE.jpg");
+    background: url("../img/TETE A TETE.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 100%;
+    background-color: $black;
 }
 
 .method_5_bg {
-    background: url("../img/TEAM DEDIÉE.jpg");
+    background: url("../img/TEAM DEDIÉE.png");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
+    background-color: $black;
 }
