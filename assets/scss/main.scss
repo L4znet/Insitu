@@ -44,9 +44,8 @@ body {
   @import "partials/insitu/main.scss";
 }
 .body_method {
-  background-color: $black;
   overflow-x: hidden;
-
+  background-color: #000;
   @import "partials/method/header.scss";
   @import "partials/method/main.scss";
 }
@@ -61,3 +60,5 @@ body {
   @import "partials/contact/header.scss";
   @import "partials/contact/main.scss";
 }
+
+@import "partials/method/bg.scss";
