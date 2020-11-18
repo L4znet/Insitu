@@ -120,3 +120,68 @@ footer {
         }
     }
 }
+
+.footer__method {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    ul {
+        transition: all 0.3s;
+        a {
+            color: $white;
+        }
+        li:first-child {
+            position: relative;
+            svg {
+                fill: #fff;
+            }
+            &:before {
+                border-top: 7px dotted $white;
+                position: absolute;
+                content: "";
+                width: 200px;
+                height: 0px;
+                right: 0px;
+            }
+        }
+        li:last-child {
+            border: 7px solid $white;
+            position: relative;
+            svg {
+                fill: #fff;
+            }
+            &:before {
+                background-color: $white;
+                position: absolute;
+                content: "";
+                width: 200px;
+                height: 7px;
+                left: -400px;
+            }
+        }
+        &:hover a {
+            color: $pink;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        &:hover {
+            li:first-child {
+                svg {
+                    fill: $pink;
+                }
+                &:before {
+                    border-top: 7px dotted $pink;
+                }
+            }
+            li:last-child {
+                border: 7px solid $pink;
+                svg {
+                    fill: $pink;
+                }
+                &:before {
+                    background-color: $pink;
+                }
+            }
+        }
+    }
+}
